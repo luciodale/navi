@@ -31,7 +31,7 @@ Then, write up the `body` function, which includes both the top menu and a subme
       :reagent-render
       (fn []
         [:div
-         [:nav#subnav
+         [:div#subnav
           [:a.link {:href "#security"}
            "Security"]
           [:a.link {:href "#cloud"}
@@ -136,6 +136,18 @@ The CSS for the components can be found here:
     background: lightgrey;
 }
 ```
+
+## How it works
+
+*Navi* looks for a DOM element that has the user specified class or id, the only string argument required for the library to work. Then, it finds any link tag i.e. `<a> ... </a>` within the found element to extract and parse the `href` attributes into ids i.e. `#services` into `services`.
+
+After that, the ids are leveraged to collect the body sections, and at this point we have everything we need to write the scroll listener for the navigation.
+
+The navbar offset is automatically computed to make sure that the tabs switch in sync with the content. Also, when a tab is active, the relevant `<a>` tag will receive an `.active` class, which one can style as they wish in the CSS. 
+
+## Debug
+
+Make sure that your internal hyperlinks i.e. `#services` match the section ids i.e. `services` to avoid null pointer exceptions.
 
 ## Next Features
 
