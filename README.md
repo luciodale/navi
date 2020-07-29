@@ -151,4 +151,4 @@ Make sure that your internal hyperlinks i.e. `#services` match the section ids i
 
 ## Next Features
 
-The goal is to make this library more dynamic by specifying a set of user configurable options.
+The goal is to make this library more dynamic by specifying a set of user configurable options. Also, the plan is to leverage the Intersection Observer API for further performance improvements.
