@@ -2,7 +2,7 @@
 
 [![Clojars Project](https://img.shields.io/clojars/v/navi.svg)](https://clojars.org/navi)
 
-*Navi* is a cljs library that provides a way to easily perform on scroll switching tabs during navigation. It doesn't bring it any dependencies, as it solely uses js interop. The current API consists of a single function, being `register-navigation`. The following GIF shows what you can achieve with *Navi* by simply calling the main function with any navbar id or class.
+*Navi* is a cljs library that provides a way to easily perform on scroll switching tabs during navigation. It doesn't bring in any dependencies, as it solely uses js interop. The current API consists of a single function, being `register-navigation`. The following GIF shows what you can achieve with *Navi* by simply calling the main function with any navbar id or class.
 
 <img src="https://s7.gifyu.com/images/ezgif.com-video-to-gif9c779c192fe29bbc.gif" width="80%" />
 
